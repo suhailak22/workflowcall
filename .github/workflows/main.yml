@@ -6,6 +6,6 @@ jobs:
   steps:
   - name: work
     id: work
-    uses: suhailak22/workflowcall/actions/trail@main
+    uses: suhailak22/workflowcall/actions/test@main
     with:
       node-version: 20
