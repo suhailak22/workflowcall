@@ -1,0 +1,23 @@
+name: learning
+description: learning-action
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+    - name: npm install 
+      shell: bash
+      run: npm install -g bats
+    - name: list files
+      shell: bash
+      run: ls
+    - name: node version checking
+      shell: bash
+      run: node -v
+    - name: docker image
+      shell: bash
+      run: |
+        docker run -d --name nginxlatest nginx:latest
+  

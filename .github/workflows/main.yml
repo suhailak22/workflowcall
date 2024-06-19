@@ -4,4 +4,8 @@ jobs:
   workflowfunction:
   runs-on: ubuntu-lastest
   steps:
-  - name:
+  - name: work
+    id: work
+    uses: suhailak22/workflowcall/actions/trail@main
+    with:
+      node-version: 20
