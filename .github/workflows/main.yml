@@ -1,0 +1,7 @@
+name: workflow
+on: [workflow_call]
+jobs:
+  workflowfunction:
+  runs-on: ubuntu-lastest
+  steps:
+  - name:
